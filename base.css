@@ -1,1 +1,7 @@
-body {background-color: plum;}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: plum;
+}
