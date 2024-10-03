@@ -1,0 +1,53 @@
+.title {
+  --time: 0.3s;
+  --steps: 4;
+  --delay: 2s;
+  --cursordelay: 0s;
+  --width: 2.5em;
+  --direction: forwards;
+  --repeat: 4;
+}
+
+.description {
+  --time: 1s;
+  --steps: 50;
+  --delay: 3s;
+  --cursordelay: 3s;
+  --width: 30em;
+  --direction: forwards;
+  --repeat: infinite;
+}
+
+.typewriter-animation {
+  animation: typewriter var(--time) steps(var(--steps)) var(--delay) 1 normal
+      both,
+    blinkTextCursor 750ms linear var(--cursordelay) var(--repeat)
+      var(--direction);
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--width);
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes hidecursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: rgba(255, 255, 255, 0);
+  }
+}

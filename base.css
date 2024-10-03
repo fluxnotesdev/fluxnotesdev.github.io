@@ -7,5 +7,60 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: plum;
+  background: linear-gradient(
+    165deg,
+    #eb703f,
+    #e8668d,
+    #d547b4,
+    #a045aa,
+    #8451a8,
+    #513b85,
+    #2e2e5b,
+    rgba(0, 0, 0, 1)
+  );
+
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+
+  width: var(--width);
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+
+  font-size: 5em;
+
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+
+  transform: translateY(-50%);
+}
+
+.titlediv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+}
+
+.description {
+  margin: 0;
+
+  width: var(--width);
+  border-right: 2px solid rgba(255, 255, 255, 0);
+
+  font-size: 1.5em;
+
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+
+  transform: translateY(-50%);
 }
