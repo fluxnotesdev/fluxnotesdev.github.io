@@ -82,3 +82,32 @@ body {
   white-space: nowrap;
   overflow: hidden;
 }
+
+.description {
+  --time: 1s;
+  --steps: 50;
+  --delay: 3s;
+  --cursordelay: 3s;
+  --width: 30em;
+  --direction: forwards;
+  --repeat: infinite;
+
+  display: none;
+
+  margin: 0;
+
+  width: var(--width);
+  border-right: 2px solid rgba(255, 255, 255, 0);
+
+  font-size: 1.5em;
+
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  .description {
+    display: block;
+  }
+}
