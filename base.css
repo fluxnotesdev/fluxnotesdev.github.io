@@ -29,14 +29,6 @@ body {
   );
 }
 
-/*--time: 0.3s;
-  --steps: 4;
-  --delay: 2s;
-  --cursordelay: 0s;
-  --width: 30em;
-  --direction: forwards;
-  --repeat: 4;*/
-
 .title {
   --time: 0.29s;
   --steps: 4;
@@ -54,29 +46,6 @@ body {
   border-right: 2px solid rgba(255, 255, 255, 0);
 
   font-size: 5em;
-
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.description {
-  --time: 1s;
-  --steps: 50;
-  --delay: 3s;
-  --cursordelay: 3s;
-  --width: 30em;
-  --direction: forwards;
-  --repeat: infinite;
-
-  display: block;
-
-  margin: 0;
-
-  width: var(--width);
-  border-right: 2px solid rgba(255, 255, 255, 0);
-
-  font-size: 1.5em;
 
   text-align: center;
   white-space: nowrap;
